@@ -7,4 +7,3 @@ pytz==2024.1
 seaborn==0.13.2
 flask
 joblib
-distutils
