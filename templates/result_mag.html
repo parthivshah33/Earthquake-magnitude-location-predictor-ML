@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnitude Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% if prediction_type=="Magnitude" %}
+    <h1>Magnitude Prediction Result</h1>
+    <p>Here are the details you entered:</p>
+    <ul>
+        <li>Latitude: {{ latitude }}</li>
+        <li>Longitude: {{ longitude }}</li>
+        <li>Depth: {{ depth }}</li>
+        <li>No of Stations: {{ no_of_stations }}</li>
+        <li>Gap: {{ gap }}</li>
+        <li>Close: {{ close }}</li>
+        <li>RMS: {{ rms }}</li>
+    </ul>
+    <h2>Prediction Result</h2>
+    <p>The predicted magnitude is: {{ prediction }}</p>
+    <a href="{{ url_for('home') }}">Go Back</a>
+    {% endif %}
+    {% if prediction_type=="Location" %}
+    <h1>Location Prediction Result</h1>
+    <p>Here are the details you entered:</p>
+    <ul>
+        <li>Depth: {{ depth }}</li>
+        <li>Magnituide: {{ magnitude }}</li>
+        <li>No of Stations: {{ no_of_stations }}</li>
+        <li>Gap: {{ gap }}</li>
+        <li>Close: {{ close }}</li>
+        <li>RMS: {{ rms }}</li>
+    </ul>
+    <h2>Prediction Result</h2>
+    <p>The predicted Location is: Latitude -> {{ prediction[0][0] }}  Longitude -> {{ prediction[0][1] }}</p>
+    <a href="{{ url_for('home') }}">Go Back</a>
+    {% endif %}
+</body>
+</html>

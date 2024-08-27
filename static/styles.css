@@ -1,0 +1,151 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Title and paragraph styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+form button {
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #218838;
+}
+
+form button {
+    background-color: #007bff;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive form styles */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Button group styles */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+    width: 150px;
+}
+
+.button-group a:hover {
+    background-color: #0056b3;
+}
+
+/* Result page styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
