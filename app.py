@@ -1,3 +1,4 @@
+from matplotlib.pyplot import margins
 import streamlit as st
 from preprocess import preprocess_MagPrediction, preprocess_LocationPrediction
 from inference import inference_MagPrediction, inference_LocationPrediction
